@@ -1,6 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+# Class provided by CI-API walkthrough.
+
 
 class Post(models.Model):
     """
@@ -37,6 +39,10 @@ class Post(models.Model):
     )
 
     class Meta:
+        """
+        Order posts by date created.
+        Display by most recent first.
+        """
         ordering = ['-created_at']
 
     def __str__(self):

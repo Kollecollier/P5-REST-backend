@@ -5,17 +5,24 @@ from .serializers import FollowerSerializer
 
 
 class FollowerList(generics.ListCreateAPIView):
+    """
+    Allow's user to follow other user.
+    """
     serializer_class = FollowerSerializer
     queryset = Follower.objects.all()
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     def perform_create(self, serializer):
+        """
+        If a user is authenticated,
+        their follow request shall be saved to the database
+        """ 
         serializer.save(owner=self.request.user)
 
 
 class FollowerDetail(generics.RetrieveDestroyAPIView):
     """
-    Delete a new follower if u are the userowner.
+    Allowing users to follow/unfollow other users
     """
     permission_classes = [IsOwnerOrReadOnly]
     serializer_class = FollowerSerializer

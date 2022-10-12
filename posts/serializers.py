@@ -3,7 +3,11 @@ from posts.models import Post
 from likes.models import Like
 
 
+# Class provided by CI-API walkthrough.
 class PostSerializer(serializers.ModelSerializer):
+    """
+    Serializer Posts Model.
+    """
     owner = serializers.ReadOnlyField(source='owner.username')
     is_owner = serializers.SerializerMethodField()
     profile_id = serializers.ReadOnlyField(source='owner.profile.id')
@@ -13,6 +17,10 @@ class PostSerializer(serializers.ModelSerializer):
     comments_count = serializers.ReadOnlyField()
 
     def validate_image(self, value):
+        """
+        Restrict size of image.
+        Produce error warning to inform user.
+        """
         if value.size > 1024 * 1024 * 2:
             raise serializers.ValidationError(
                 'image size larger than 2MB!'
@@ -28,10 +36,17 @@ class PostSerializer(serializers.ModelSerializer):
             return value
 
     def get_is_owner(self, obj):
+        """
+        Return correct user.
+        """
         request = self.context['request']
         return request.user == obj.owner
 
     def get_like_id(self, obj):
+        """
+        Return's & calculate's total number
+        of likes on post view.
+        """
         user = self.context['request'].user
         if user.is_authenticated:
             like = Like.objects.filter(
@@ -42,6 +57,9 @@ class PostSerializer(serializers.ModelSerializer):
         return None
 
     class Meta:
+        """
+        Display fields for views.
+        """
         model = Post
         fields = [
             'id', 'owner', 'is_owner', 'profile_id',

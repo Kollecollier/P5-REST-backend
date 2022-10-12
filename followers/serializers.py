@@ -4,6 +4,9 @@ from django.db import IntegrityError
 
 
 class FollowerSerializer(serializers.ModelSerializer):
+    """
+    Serializer for Followers Model.
+    """
     owner = serializers.ReadOnlyField(source='owner.username')
     followed_name = serializers.ReadOnlyField(source='followed.username')
 
