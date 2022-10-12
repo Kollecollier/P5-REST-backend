@@ -64,7 +64,7 @@ CLOUDINARY_STORAGE = {
 }
 
 ALLOWED_HOSTS = [
-    'p5backend.herokuapp.com'
+    'https://p5backend.herokuapp.com/'
     'localhost'
 ]
 
