@@ -56,13 +56,6 @@ REST_AUTH_SERIALIZERS = {
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-CLOUDINARY_STORAGE = {
-    'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL'),
-    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
-    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
-    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
-}
-
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost'
@@ -139,11 +132,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'p5backend.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
 DATABASES = {
-    'default': ({
+   'default': ({
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     } if 'DEV' in os.environ else dj_database_url.parse(
