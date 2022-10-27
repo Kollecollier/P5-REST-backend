@@ -27,13 +27,13 @@ class CommentSerializer(serializers.ModelSerializer):
         """
         Display's the time passsed since comment was created.
          """
-        return naturaltime(obj.created_on)
+        return naturaltime(obj.created_at)
 
-    def get_modified_on(self, obj):
+    def get_updated_at(self, obj):
         """
         Display's the time passsed since comment was modified.
         """
-        return naturaltime(obj.modified_on)
+        return naturaltime(obj.updated_at)
 
     class Meta:
         """
