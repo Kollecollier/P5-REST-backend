@@ -23,10 +23,10 @@ class CommentSerializer(serializers.ModelSerializer):
         request = self.context['request']
         return request.user == obj.owner
 
-        def get_created_on(self, obj):
-            """
-            Display's the time passsed since comment was created.
-            """
+    def get_created_at(self, obj):
+        """
+        Display's the time passsed since comment was created.
+         """
         return naturaltime(obj.created_on)
 
     def get_modified_on(self, obj):
