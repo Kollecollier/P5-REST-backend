@@ -54,7 +54,7 @@ REST_AUTH_SERIALIZERS = {
 }
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEV' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
