@@ -33,7 +33,7 @@ class PostSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 'image hight larger than 4096px!'
             )
-            return value
+        return value
 
     def get_is_owner(self, obj):
         """
