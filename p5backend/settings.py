@@ -90,10 +90,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
-    'posts',
-    'comments',
-    'likes',
-    'followers',
     'django_filters',
     'rest_framework.authtoken',
     'dj_rest_auth',
@@ -105,6 +101,13 @@ INSTALLED_APPS = [
     'corsheaders',
 
     'profiles',
+    'posts',
+    'comments',
+    'likes',
+    'followers',
+
+
+
 ]
 SITE_ID = 1
 
