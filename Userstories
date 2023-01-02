@@ -26,38 +26,26 @@
 
 11. As a **user** I can **like a post* so that i can instanly show my support on other content
 
-12. As a **user** I would like to **view liked posts** so that I can **so that I can see the posts I have previously liked**
+12. As a **user** I can **view liked posts** so that I can ** see the posts I have previously liked and other's**
 
+13. As a **user** I can **search posts** so that I can **find a post by user or title**
+ 
+14. As a **user** I can **follow a users** so that I can **see the posts of the users I follow**
 
-13. As a **user** I would like to **search posts** so that I can **find a post by author or title quickly**
- - Story points: 1
+15. As a **user** I can **edit my post** so that I can **revise or change my content**
 
-14. As a **user** I would like to **follow users** so that I can **see just the posts of the users I follow**
- - Story points: 2
+16. As a **user** I can **delete my post** so that I can **remove my content**
 
-15. As a **user** I would like to **edit my post** so that I can **revise my content**
- - Story points: 1
+## Comments
+17. As a **user** I can **create a comment**
 
-16. As a **user** I would like to **delete my post** so that I can **remove my content**
- - Story points: 1
+19. As a **user** I can **view other comments**
 
-### Epic 4 : Comments
-17. As a **user** I would like to **create a comment** so that I can **express my opinion**
- - Story points: 2
+20. As a **user** I can **edit my comment** so that I can **change or edit the information in the comment**
 
-18. As a **user** I would like to **see the comment date** so that I can **know how long a go a comment was left**
- - Story points: 1
+21. As a **user** I can **delete my comment** so that I can **remove it from the post**
 
-19. As a **user** I would like to **view other comments** so that I can **see what others have said**
- - Story points: 1
-
-20. As a **user** I would like to **edit my comment** so that I can **revise the information**
- - Story points: 1
-
-21. As a **user** I would like to **delete my comment** so that I can **remove it from the post**
- - Story points: 1
-
-### Epic 5 : Profiles
+##ofiles
 22. As a **user** I would like to **view a profile page** so that I can **obtain more information about that user**
  - Story points: 1
 
