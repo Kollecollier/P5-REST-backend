@@ -1,0 +1,67 @@
+# USER STORIES:
+
+## Authentications
+
+1. As a **user** I can **create an account** so that I can **access all the site features**
+
+2. As a **user** I can **login** so that I can **interact with the content available**
+
+3. As a **user** I can **logout** so that I can **exit my account & prevent others from gaining access**
+
+5. As an **admin** Ican **refresh access tokens** so that **users can remain logged in for 24h**
+
+## Navigation	
+
+6. As a **user** I can **view the navigation bar on every page** so that I can **easily navigate through the site**
+
+7. As a **user** I can use **have infinite scroll** so that I can **continue to browse content without having to open a new page**
+
+## Posts
+
+8. As a **user** I can **create a new post**
+
+9. As a **user** I can **view posts** so that I can **browse content**
+
+10. As a **user** I can  **view post details** so that I can **obtain more information about a post**
+
+11. As a **user** I can **like a post* so that i can instanly show my support on other content
+
+12. As a **user** I can **view liked posts** so that I can ** see the posts I have previously liked and other's**
+
+13. As a **user** I can **search posts** so that I can **find a post by user or title**
+ 
+14. As a **user** I can **follow a users** so that I can **see the posts of the users I follow**
+
+15. As a **user** I can **edit my post** so that I can **revise or change my content**
+
+16. As a **user** I can **delete my post** so that I can **remove my content**
+
+## Comments
+
+17. As a **user** I can **create a comment**
+
+19. As a **user** I can **view other comments**
+
+20. As a **user** I can **edit my comment** so that I can **change or edit the information in the comment**
+
+21. As a **user** I can **delete my comment** so that I can **remove it from the post**
+
+## Profiles
+
+22. As a **user** I can **view a profile page** so that I can **obtain more information about that user**
+
+23. As a **user** I can **see most popular profiles** so that I can **see who posts the most interesting content**
+
+24. As a **user** I can  **see stats via a user profile** so that I can **see how many followers/following/comments they have**
+
+25. As a **user** I can **follow/unfollow a user** 
+
+26. As a **user** I can **view all posts by a user**
+
+27. As a **user** I can **edit my profile** so that I can **update my personal details and information**
+
+28. As a **user** I can **update my username/password** so that I can **make alterations as needed**
+
+29. As a **user** I can **change my avatar** so that I can **assign a photo to my profile**
+
+30. As a **user** I can **view other users avatars**
